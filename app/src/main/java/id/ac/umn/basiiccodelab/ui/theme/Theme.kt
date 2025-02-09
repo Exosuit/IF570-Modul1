@@ -33,6 +33,20 @@ private val LightColorScheme = lightColorScheme(
     */
 )
 
+private val DarkColorScheme = darkColorScheme(
+    surface = Blue,
+    onSurface = Navy,
+    primary = Navy,
+    onPrimary = Chartreuse
+)
+
+private val LightColorScheme = lightColorScheme(
+    surface = Blue,
+    onSurface = Color.White,
+    primary = LightBlue,
+    onPrimary = Navy
+)
+
 @Composable
 fun BasiicCodelabTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

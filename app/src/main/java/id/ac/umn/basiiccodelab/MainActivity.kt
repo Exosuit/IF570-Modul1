@@ -26,6 +26,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
+import androidx.compose.ui.text.font.FontWeight
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import com.codelab.basics.ui.theme.BasicsCodelabTheme
 
 class MainActivity : ComponentActivity() {
@@ -142,5 +144,21 @@ fun GreetingPreview() {
 fun MyAppPreview() {
     BasicsCodelabTheme {
         MyApp(Modifier.fillMaxSize())
+    }
+}
+
+
+
+@Preview(
+    showBackground = true,
+    widthDp = 320,
+    uiMode = UI_MODE_NIGHT_YES,
+    name = "GreetingPreviewDark"
+)
+@Preview(showBackground = true, widthDp = 320)
+@Composable
+fun GreetingPreview() {
+    BasicsCodelabTheme {
+        Greetings()
     }
 }
